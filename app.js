@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for(const image of images ){
         console.log(image)
-        fetch("https://dog.ceo/api/breeds/image/random")
+        fetch("images/my-image.jpeg")
         .then(response => response.json())
         .then(data => {
             image.src = data.message
